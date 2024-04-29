@@ -29,8 +29,8 @@
                       Dropdown
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Celsius</a></li>
-                      <li><a class="dropdown-item" href="#">Farenheight</a></li>
+                      <li><a class="dropdown-item" href="c-f.html">Celsius</a></li>
+                      <li><a class="dropdown-item" href="f-c.html">Farenheight</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -52,7 +52,7 @@
            <div class="row">
 
            </div>
-            <h1>Temperature Converter</h1>
+            <h1>Celsius to Farenheight</h1>
          </div>
         
          <div class="row">
@@ -60,17 +60,30 @@
 
             </div>
        </div>
-       <div id="home">
-       <h1> How Do You Convert Anything?</h1>
-       <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.". </p>
 
-<p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-  sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi 
-  tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
-  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" </p>
-    </div>
+
+
+       <!-- Calculator -->
+    
+       <div class ="container">
+        <div class="row">
+        <div class="col">
+            <div id="convert">
+       
+        <label>Celsius</label>
+            <input id="inputcelsius" type="number" placeholder="Celsius"
+            oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)">
+          </p>
+          <p>Celsius: <span id="outputFarenheight"></span></p>
+
+          <script>
+            function temperatureConverter(valNum) {
+              valNum = parseFloat(valNum);
+              document.getElementById("outputFarenheight").innerHTML=(valNum-32)/1.8;
+            }
+            </script>
+         </div>
        </main>
 
     <footer>
