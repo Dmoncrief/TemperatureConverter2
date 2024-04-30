@@ -60,21 +60,36 @@
         <div class="row">
         <div class="col">
             <div id="convert">
-       
-        <label>Celsius</label>
-            <input id="inputcelsius" type="number" placeholder="Celsius"
-            oninput="temperatureConverter(this.value)"
-            onchange="temperatureConverter(this.value)">
-          </p>
-          <p>Celsius: <span id="outputFarenheight"></span></p>
-
-          <script>
-            function temperatureConverter(valNum) {
-              valNum = parseFloat(valNum);
-              document.getElementById("outputFarenheight").innerHTML=(valNum-32)/1.8;
-            }
-            </script>
+         <div>
+         <label for="celsiusInput">Farenheight</label>
+         <unput id="celsiustInput" type="text">
          </div>
+         
+         <div> 
+          <input id="calculateButton" type="button" value="Calculate">
+         </div>
+         
+         <div>
+          <label for="farenheightOutput">Farenheight</label>
+          <input id="farenheightsOuput" type="text">
+         </div>
+         
+         </div>
+         
+         
+         
+         </div>
+         
+         
+         </div>
+         
+         
+         
+         
+            </div>
+       
+            
+           
        </main>
 
     <footer>

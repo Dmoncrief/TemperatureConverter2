@@ -1,10 +1,25 @@
-"use strict"
+"use strict";
 
-window.onload= init;
+const fahrenheitOutput = document.getElementById("fahrenheitOutput");
+const calculateButton = document.getElementById("calculateButton");
+const celsiusInput = document.getElementById("celsiusInput");
+
+window.onload = init;
+
+function init(){
+    calculateButton.onclick = oncalculateButtonClicked;
+}
+
+function oncalculateButtonClicked(){
+    // get my starting values
+    let celsius =  Number(celsiusInput.value);
 
 
-/* When the input field receives input, convert the value from celsius to farenheight */
-function temperatureConverter(valNum) {
-    valNum = parseFloat(valNum);
-    document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
-  }
+    // compute the unknowns
+    let fahrenheit = (celsius * (9/5) + 32);
+    
+
+    //display the result
+    fahrenheitOutput.value = fahrenheit;
+
+}

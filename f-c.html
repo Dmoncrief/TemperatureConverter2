@@ -25,7 +25,7 @@
                     <a class="nav-link" href="c-f.html">Celsius To Farenheight</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="f-c.html">Farenheight To Celsisus/a>
+                    <a class="nav-link" href="f-c.html">Farenheight To Celsius</a>
                   </li>
                 </ul>
         
@@ -56,23 +56,33 @@
         <div class="row">
         <div class="col">
             <div id="convert">
-        
-        <p>
-            <label>Fahrenheight</label>
-            <input id="inputFahrenheight" type="number" placeholder="Fahrenheight"
-            oninput="temperatureConverter(this.value)"
-            onchange="temperatureConverter(this.value)">
-          </p>
-          <p>Celsius: <span id="outputCelsius"></span></p>
-
-          <script>
-            function temperatureConverter(valNum) {
-              valNum = parseFloat(valNum);
-              document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
-            }
-            <div>
-            </script>
-            </div>
+         <div>
+         <label for="farenheightInput">Farenheight</label>
+         <unput id="farenheightInput" type="text">
+         </div>
+         
+         <div> 
+          <input id="calculateButton" type="button" value="Calculate">
+         </div>
+         
+         <div>
+          <label for="celsiusOutput">Celsius</label>
+          <input id="celsiusOuput" type="text">
+         </div>
+         
+         </div>
+         
+         
+         
+         </div>
+         
+         
+         </div>
+         
+        </div>
+       
+            
+           
 
 
 
