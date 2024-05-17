@@ -1,6 +1,6 @@
 "use strict";
 
-const fahrenheitInput = document.getElementById("fahrenheitInput");
+const farenheitInput = document.getElementById("farenheitInput");
 const calculateButton = document.getElementById("calculateButton");
 const celsiusOutput = document.getElementById("celsiusOutput");
 
@@ -12,7 +12,7 @@ function init(){
 
 function oncalculateButtonClicked(){
     // get my starting values
-    let fahrenheit =  Number(fahrenheitInput.value);
+    let fahrenheit =  Number(farenheitInput.value);
 
 
     // compute the unknowns
